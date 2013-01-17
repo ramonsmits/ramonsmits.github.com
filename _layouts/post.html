@@ -2,9 +2,11 @@
 layout: default
 ---
 <article>
-  <time datetime="{{ page.date | xmlschema }}">{{ page.date | date: "%d %b, %Y" }}</time>
+  <time datetime="{{ page.date | xmlschema }}">{{ page.date | date: "%d %b, %Y" }}</time> by <a title="Ramon Smits Google+ profile" rel="author" href="http://profiles.google.com/ramonsmits?rel=author" alt="Google+">Ramon Smits</a>
+
   <h2>{{ page.title }}</h2>
   {{ content }}
+  
 </article>
 <hr>
 <div id="paginator">
