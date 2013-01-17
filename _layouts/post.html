@@ -1,14 +1,18 @@
 ---
 layout: default
 ---
+<div>
+<span class='st_fblike_hcount' displayText='Facebook Like'></span>
+<span class='st_plusone_hcount' displayText='Google +1'></span>
+<span class='st_twitter_hcount' displayText='Tweet'></span>
+<span class='st_facebook_hcount' displayText='Facebook'></span>
+<span class='st_googleplus_hcount' displayText='Google +'></span>
+</div>
 <article>
   <time datetime="{{ page.date | xmlschema }}">{{ page.date | date: "%d %b, %Y" }}</time> by <a title="Ramon Smits Google+ profile" rel="author" href="http://profiles.google.com/ramonsmits?rel=author" alt="Google+">Ramon Smits</a>
-
   <h2>{{ page.title }}</h2>
   {{ content }}
-  
 </article>
-
 <div id="disqus_thread"></div>
 <script type="text/javascript">
 	var disqus_shortname = 'ramonsmits';
@@ -22,8 +26,6 @@ layout: default
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    
-
 <hr>
 <div id="paginator">
   {% if page.previous %}
