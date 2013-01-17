@@ -1,0 +1,3 @@
+Sitemap: http://ramonsmits.com/sitemap.xml
+
+User-agent: *
