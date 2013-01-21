@@ -14,10 +14,15 @@ layout: nil
  </author>
  {% for post in site.posts limit:10 %}
    <entry>
+     <id>{{ post.url }}</id>
      <title>{{ post.title | xml_escape }}</title>
      <link href="http://{{ site.host }}{{ post.url }}"/>
      <updated>{{ post.date | date_to_xmlschema }}</updated>
      <id>http://{{ site.host }}{{ post.id }}</id>
+     <author>
+       <name>Ramon Smits</name>
+       <uri>http://ramonsmits.com</uri>
+     </author>
      <content type="html">{{ post.content | xml_escape }}</content>
    </entry>
  {% endfor %}
