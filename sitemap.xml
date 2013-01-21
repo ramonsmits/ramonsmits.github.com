@@ -14,11 +14,7 @@ layout: nil
     <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
   </url>
   <url>
-    <loc>http://{{ site.host }}/about/</loc>
-    <lastmod>2010-09-19</lastmod>
-  </url>
-  <url>
-    <loc>http://{{ site.host }}/archive/</loc>
+    <loc>http://{{ site.host }}/archive.html</loc>
     <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
   </url>
 </urlset> 
