@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta name="description" content="Ramon Smits : Donatings bits to programmers around the world" />
+		<title>{{page.title}}</title>
+{% if page.description %}
+		<meta name="description" content="{{page.description}}" />
+{% endif %}
+{% if page.tags %}
+		<meta name="keywords" content="{{page.tags | join: ','}}" />
+{% endif %}
+		<meta name="robots" content="INDEX,FOLLOW" />
 		<link rel="alternate" href="http://feeds.feedburner.com/ramonsmits" type="application/rss+xml" title="RSS Feed" />
 		<link rel="alternate" href="http://feeds.feedburner.com/ramonsmits" type="application/atom+xml" title="Atom Feed" />
 		<link rel=icon href=favicon.ico sizes="16x16 32x32 48x48" type="image/vnd.microsoft.icon">
