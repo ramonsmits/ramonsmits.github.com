@@ -11,6 +11,6 @@ Problem is that Microsoft Forefront Threat Management Gateway (TMG) 2010 does no
 
 A while ago I found a free version available via the [Japanese X-Forwarded-For Wikipedia page](http://ja.wikipedia.org/wiki/X-Forwarded-For) that refers to a romanian page (http://itboard.ro/blogs/jurnal_de_vet/archive/2011/03/30/x-forwarded-for-pentru-tmg.aspx) but it seems that this blog is not available anymore. At the time I downloaded this module and translated the page where the page seemed to provide the module as-is. So I want to provide you the same module here as-is :-)
 
-[XFF-Filter4TMG.zip](XFF-Filter4TMG.zip)
+[XFF-Filter4TMG.zip](http://ramonsmits.com/downloads/XFF-Filter4TMG.zip)
 	
 Hope this helps some people.
