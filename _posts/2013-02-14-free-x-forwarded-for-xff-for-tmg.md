@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Free X-Forwarded-For (XFF) plugin for Forefront Threat Management Gateway (TMG) 2010"
+tags: [xff, free, tmg, x-forwarded-for]
 ---
 
 Those familiar with http proxy servers know that most reverse proxies are configure to operate in a non transparent configuration. This results in a webserver to get the IP address of the proxy server instead of the client that connected to the proxy. A de facto standard exists where the proxy adds an additional http header to the http request so that a webserver is capable to receive the ip address of the original request.

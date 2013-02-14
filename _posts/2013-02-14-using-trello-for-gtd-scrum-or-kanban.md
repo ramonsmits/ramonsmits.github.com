@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Using Trello for GTD, Scrum or Kanban"
+tags: [trello, recommendation, gtd, scrum, kanban]
 ---
 
 A lot of people are familiar with the concepts of [getting things done](http://en.wikipedia.org/wiki/Getting_Things_Done), [scrum](http://en.wikipedia.org/wiki/Scrum_(development)) and [kanban](http://en.wikipedia.org/wiki/Kanban). All of these require the discipline to actively manage a set of tasks in a certain way. The thing is that it helps if you have a tool that is super simple to pick up and just use and preferable on all devices.

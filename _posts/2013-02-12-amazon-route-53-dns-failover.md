@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Amazon Route 53 Introduces DNS Failover"
+tags: [amazon, dns, failover, route 53, ttl]
 ---
 
 I must say that I'm a fan of Route 53 for quite some time. It just is an awesome DNS solution which is especially interesting when you use S3 or EC2 as you can select your Amazon stuff from within Route 53 when you create a DNS record. They already have a neat feature called *Latency Based Routing* where you can route the user to the region with the lowest latency.

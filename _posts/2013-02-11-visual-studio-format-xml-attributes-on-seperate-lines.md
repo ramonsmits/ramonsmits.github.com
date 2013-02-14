@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Visual Studio - Format XML attributes on seperate lines"
+tags: [vs2012, vs2012, visual studio, xml, formatting]
 ---
 
 Most visual studio developers are aware that they can auto format their c# or xml files by hitting `CTRL+E, D` as this is something they see other developers do. However, most are unaware of the fact that they can configure formatting rules. For example, I like uniform xml formatting accross all solutions but as with all formatting most stuff formatting lay-out is personal and especially how to format xml attributes. Visual Studio will not mess with xml attributes and tries to leave them as is but this can be changed by selecting the option *Align attributes each on a separate line* in the XML Formatting options.

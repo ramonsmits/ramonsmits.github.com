@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Linux filesystem security"
+tags: [linux, filesystem, security, synology, nas, chmod]
 ---
 As a windows user I often try to use and interpret linux as I would do with windows and that is often incorrect. I just read the following about the linux file system security and immediately understand all security related issues I currently have on my Synology NAS.
 
