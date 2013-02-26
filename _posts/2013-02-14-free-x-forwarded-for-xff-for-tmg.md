@@ -15,3 +15,7 @@ A while ago I found a free version available via the [Japanese X-Forwarded-For W
 [XFF-Filter4TMG.zip](http://ramonsmits.com/downloads/XFF-Filter4TMG.zip)
 	
 Hope this helps some people.
+
+## Update 26-2-2013
+
+The operation department of my current employee has difficulty with closed source distributables without support. I tried to get in contact with Gabriel Citron who created XFF-Filter4TMG and asked him if you could provide the source and if it is possible to opensource it. He responded quickly with the code and I have put the [XFF-Filter4TMG sourcecode on github](https://github.com/ramonsmits/XFF-Filter4TMG)
