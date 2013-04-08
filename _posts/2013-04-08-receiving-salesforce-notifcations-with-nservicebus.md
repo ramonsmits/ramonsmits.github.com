@@ -115,7 +115,7 @@ Now we are at a crucial section! We defined the outbound message and now need to
 
 Create a new rule and select the 'Contact' object and just define a rule that will always result in 'true'. For example that a name field should not be null like you see in my screenshot.
 
-![Create a new workflow rule](rule.png)
+![Create a new workflow rule](/artifacts/rule.png)
 
 
 Now add a workflow action and select 'Select existing action', search for 'outbound message', add your just created outbound messages and save it. Now when you add or edit contact object a notification will be queued by the workflow rule. You can verify this by browsing to:
