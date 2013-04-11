@@ -52,7 +52,7 @@ Here is the actual `web.config` containing the url rewrite configuration. Hope t
 	          <!--See: http://ramonsmits.com/2013/03/19/iis-url-rewrite-hostname-as-subfolder -->
 	          <match url=".*" />
 	          <conditions trackAllCaptures="false">
-	            <add input="{HTTP_HOST}" pattern="^(www\.)?(.*)(:[0-9]+)$" />
+	            <add input="{HTTP_HOST}" pattern="^(www\.)?(.+?)(:[0-9]+)?$" />
 	          </conditions>
 	          <action type="Rewrite" url="{C:2}/{R:0}" logRewrittenUrl="true" />
 	        </rule>
@@ -60,3 +60,8 @@ Here is the actual `web.config` containing the url rewrite configuration. Hope t
 	    </rewrite>
 	  </system.webServer>
 	</configuration>
+
+Update 2013-04-11
+---
+
+The regular expression did not work when no port was specified f.e. ramonsmits.com failed to match which results in url rewrite to not rewrite at all. I only tested the previous version through a load-balancer which redirected traffic to non default ports.
