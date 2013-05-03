@@ -4,11 +4,11 @@ title: "Multi threaded throttling in csharp"
 tags: [threading,throttling,limiter,limiting,c#,csharp,.net]
 ---
 
-I had the need to limit the number of requests per second I was hitting a webserver as the connections went through a firewall and this dropped my packets when I was opening too much connections. I could not re-use the connections because of load-balancing and authentication requirements.
+I had the need to limit the number of requests per second I was hitting a webserver. Packets were dropped by a firewall as the connections I was opening was done too often. I could not re-use the connections because of load-balancing and authentication requirements.
 
-My implementation was based on `Parallel.ForEach` which means that .net automatically increases the number of worker threads until it somehow detects that increasing worker threads does not have any effect. I started by limiting the maximum number of worker threads which can be specified by passing a `ParallelOptions` instance but this has the effect that the throughput is very dependant on the current system load, network conditions and most imported current hardware. Running it on another machine makes the whole process run completely different. I somehow required throttling of my work items which is sometimes also referred as limiting. The requirement is simple and in my case I defined it as that my application was not allowed to process more then 10 items per second.
+My client is based on `Parallel.ForEach` which means that .net automatically increases the number of worker threads until it somehow detects that increasing worker threads does not result in better performance. I started by limiting the maximum number of worker threads by passing a `ParallelOptions` instance. This has the effect that the throughput is very dependant on the current system load, network conditions - and most imported - current hardware. Running it on another machine is a whole different execution environment. The solution was throttling of my work items throughput which is sometimes also referred as limiting. The requirement is simple and in my case I defined it as that my application was not allowed to process more then 10 items per second.
 
-I started 'googling' and landed on stackoverflow where most reactions referred to either the token bucket in various implementations. I decided to stop reading as I only needed a hint because I wanted to implement the logic myself and token bucket was enough information for me. I translated this to
+I started 'googling' and landed on stackoverflow where most reactions referred to a token bucket in various implementations. I decided to stop reading as I only needed a hint, I wanted to implement the logic myself and token bucket was enough information for me. I translated this to
 
 >When a item needs processing decide if the throttle limit has not been reached, increment the current number or items and continue. If the throttle limit has been reached then wait until the throttle limit will be reset.
 
@@ -65,6 +65,6 @@ Example usage:
 	// Processing should at least have taken 100 (1000/10) seconds
 	Console.WriteLine(start.Elapsed);
 
-I ran my implementation and it just works! I love that when you create a piece of code within a few minutes.
+I ran my implementation and it just works! I love it when you create a working piece of code within a few minutes.
 
-Well, it has a couple of minor issues like all is synchronized by the lock statement and blocking of the thread but I don't mind that and this is good enough for my purpose and frankly I would not now how to optimized if a lot more without adding much more code. The only thing I would think of would be to use `Stopwatch` to lower the overhead of DateTime.UtcNow but this overhead can be ignored as this overhead if no where near the overhead created by calling `Thread.Sleep` when the throttle limit has been reached.
+Well, it has a couple of minor issues like that all is synchronized by the lock statement and blocking of the thread. But I don't mind that and it is good enough for my current purpose and frankly I would not know how to optimize it a lot more without adding much more code. The only thing I would think of would be to use `Stopwatch` to lower the overhead of DateTime.UtcNow but this overhead is no where near the overhead created by calling `Thread.Sleep` when the throttle limit has been reached.
