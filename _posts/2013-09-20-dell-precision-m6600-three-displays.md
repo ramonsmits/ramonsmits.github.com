@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Dell Precision M6600 working with three monitors"
-tags: [Dell,Precision M6600,DVI,DisplayPort]
+tags: [Dell,Precision,M6600,DVI,DisplayPort]
 ---
 
 Work provides a nice  Dell Precision M6600 laptop workstation. It is a nice laptop and the dockingstation provides ports to connect additional displays. Our M6600 comes with the ATI Fire Pro M8900 chipset and I tried to connect two additional displays to get a triple display configuration consisting of the laptop display and two 22" monitors.
