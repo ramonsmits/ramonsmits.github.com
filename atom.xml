@@ -21,7 +21,7 @@ layout: nil
      <id>http://{{ site.host }}{{ post.id }}</id>
      <author>
        <name>Ramon Smits</name>
-       <uri>http://ramonsmits.com</uri>
+       <uri>http://www.ramonsmits.com</uri>
      </author>
      <content type="html">{{ post.content | xml_escape }}</content>
    </entry>
