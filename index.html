@@ -4,7 +4,7 @@ title: Ramon Smits
 tags: [ramon smits, ramon, website, blog, personal, .net, software development, programming, exyll]
 ---
 <article>
-  <time datetime="{{ site.posts.first.date | xmlschema }}">{{ site.posts.first.date | date: "%d %b" }}</time>
+  <time datetime="{{ site.posts.first.date | xmlschema }}">{{ site.posts.first.date | date: "%-d %B %Y" }}</time>
   <h2><a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a></h2>
   {{ site.posts.first.content }}
 </article>
