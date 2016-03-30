@@ -8,29 +8,27 @@ I came across an [MQBench.exe Measures Time to Deliver MSMQ Messages](https://su
 
 The following example sends 100,000 messages of 2KB using 6 threads. So this means that the given number of messages is multiplied by the number of threads.
 
-```
-    MSMQBench.exe -sr 100000 2048 -t 6 -q .\PRIVATE$\msmqbench
-```
+  MSMQBench.exe -sr 100000 2048 -t 6 -q .\PRIVATE$\msmqbench
 
 Please make sure that the *transactional* queue exists as this tool will not create it for you. You will get the message `MQPathNameToFormatName failed, 3222142979l(0xc00e0003)` if the queue does not exist.
 
 On my machine I got the following results:
 
 Using `-sr`:
-```
-Total messages: 600000 Sent
-Test time:      10.175 seconds
-Benchmark:      58970 messages per second
-Throughput:     120770326 bytes per second
-```
+
+  Total messages: 600000 Sent
+  Test time:      10.175 seconds
+  Benchmark:      58970 messages per second
+  Throughput:     120770326 bytes per second
+
 
 Using `-se`:
-```
-Total messages: 600000 Sent
-Test time:      41.215 seconds
-Benchmark:      14558 messages per second
-Throughput:     59629499 bytes per second
-```
+
+  Total messages: 600000 Sent
+  Test time:      41.215 seconds
+  Benchmark:      14558 messages per second
+  Throughput:     59629499 bytes per second
+
 
 It seems that the `-s` option has the *express* and *recoverable* options reversed. The *recoverable* run is taking just 1/4th of the *express* run.
 
