@@ -8,7 +8,7 @@ body {
   color: #333;
   margin: 0 auto;
   max-width: 900px;
-  font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 1em/1.5 'Open Sans', sans-serif;
   }
 
 a {
@@ -72,11 +72,6 @@ footer{
 	padding: .1em 3em;
 }
 
-/* Typography */
-
-p{
-	font: 1em/1.5 Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
-}
 
 
 img{
@@ -96,7 +91,6 @@ blockquote p{
 	font-style:italic;
 }
 a{
-	font: 700 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-decoration: none
 }
 a:hover, a:focus{
@@ -107,6 +101,13 @@ a:active{
 	top:1px;
 }
 
+code{
+	font-family: 'Inconsolata', Courier, monospace;
+	white-space: pre;
+  border: 0.5px silver solid;
+  display: block;
+	padding:10px;
+}
 /* Tabs */
 
 .js-on #tabs article
