@@ -7,6 +7,7 @@
 {% if page.description %}		<meta name="description" content="{{page.description}}" />{% endif %}
 {% if page.tags %}		<meta name="keywords" content="{{page.tags | join: ','}}" />{% endif %}
 		<meta name="robots" content="INDEX,FOLLOW" />
+		<link rel="canonical" href="https://{{ site.host }}{{ page.url }}" />
 		<link href='//fonts.googleapis.com/css?family=Open+Sans|Inconsolata' rel='stylesheet' type='text/css'>
 		<link rel="alternate" href="//feeds.feedburner.com/ramonsmits" type="application/rss+xml" title="RSS Feed" />
 		<link rel="alternate" href="//feeds.feedburner.com/ramonsmits" type="application/atom+xml" title="Atom Feed" />
