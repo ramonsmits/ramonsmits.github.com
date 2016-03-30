@@ -9,7 +9,7 @@ layout: default
 <span class='st_googleplus_hcount' displayText='Google +'></span>
 </div>
 <article>
-  <time datetime="{{ page.date | xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time> by <a title="Ramon Smits Google+ profile" rel="author" href="http://profiles.google.com/ramonsmits?rel=author" alt="Google+">Ramon Smits</a>
+  <time datetime="{{ page.date | xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time> by <a title="Ramon Smits Google+ profile" rel="author" href="https://profiles.google.com/ramonsmits?rel=author" alt="Google+">Ramon Smits</a>
   <h2>{{ page.title }}</h2>
   {{ content }}
 </article>
@@ -17,15 +17,15 @@ layout: default
 <script type="text/javascript">
 	var disqus_shortname = 'ramonsmits';
 	var disqus_identifier = '{{ page.url }}';
-	var disqus_url = 'http://ramonsmits.com{{ page.url }}';
+	var disqus_url = 'https://ramonsmits.com{{ page.url }}';
 	(function() {
 		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-		dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
 		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 	})();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="//disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 <hr>
 <div id="paginator">
   {% if page.previous %}

@@ -1,3 +1,3 @@
-Sitemap: http://www.ramonsmits.com/sitemap.xml
+Sitemap: https://www.ramonsmits.com/sitemap.xml
 
 User-agent: *

@@ -5,16 +5,16 @@ layout: nil
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {% for post in site.posts %}
   <url>
-    <loc>http://{{ site.host }}{{ post.url }}</loc>
+    <loc>https://{{ site.host }}{{ post.url }}</loc>
     <lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod>
   </url>
   {% endfor %}
   <url>
-    <loc>http://{{ site.host }}/</loc>
+    <loc>https://{{ site.host }}/</loc>
     <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
   </url>
   <url>
-    <loc>http://{{ site.host }}/archive.html</loc>
+    <loc>https://{{ site.host }}/archive.html</loc>
     <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
   </url>
 </urlset> 

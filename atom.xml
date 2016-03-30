@@ -4,10 +4,10 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  <title>Ramon Smits</title>
- <link href="http://{{ site.host }}/atom.xml" rel="self"/>
- <link href="http://{{ site.host }}/"/>
+ <link href="https://{{ site.host }}/atom.xml" rel="self"/>
+ <link href="https://{{ site.host }}/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://{{ site.host }}/</id>
+ <id>https://{{ site.host }}/</id>
  <author>
    <name>Ramon Smits</name>
    <email>ramon.smits@gmail.com</email>
@@ -16,12 +16,12 @@ layout: nil
    <entry>
      <id>{{ post.url }}</id>
      <title>{{ post.title | xml_escape }}</title>
-     <link href="http://{{ site.host }}{{ post.url }}"/>
+     <link href="https://{{ site.host }}{{ post.url }}"/>
      <updated>{{ post.date | date_to_xmlschema }}</updated>
-     <id>http://{{ site.host }}{{ post.id }}</id>
+     <id>https://{{ site.host }}{{ post.id }}</id>
      <author>
        <name>Ramon Smits</name>
-       <uri>http://www.ramonsmits.com</uri>
+       <uri>https://www.ramonsmits.com</uri>
      </author>
      <content type="html">{{ post.content | xml_escape }}</content>
    </entry>
