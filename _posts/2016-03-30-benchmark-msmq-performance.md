@@ -12,14 +12,26 @@ The following example sends 100,000 messages of 2KB using 6 threads. So this mea
     MSMQBench.exe -sr 100000 2048 -t 6 -q .\PRIVATE$\msmqbench
 ```
 
-Please make sure that the queue exists as this tool will not create it for you. You will get the message `MQPathNameToFormatName failed, 3222142979l(0xc00e0003)` if the queue does not exist.
+Please make sure that the *transactional* queue exists as this tool will not create it for you. You will get the message `MQPathNameToFormatName failed, 3222142979l(0xc00e0003)` if the queue does not exist.
 
+On my machine I got the following results:
 
-On my machine I got the following result:
-
+Using `-sr`:
 ```
 Total messages: 600000 Sent
 Test time:      10.175 seconds
 Benchmark:      58970 messages per second
 Throughput:     120770326 bytes per second
 ```
+
+Using `-se`:
+```
+Total messages: 600000 Sent
+Test time:      41.215 seconds
+Benchmark:      14558 messages per second
+Throughput:     59629499 bytes per second
+```
+
+It seems that the `-s` option has the *express* and *recoverable* options reversed. The *recoverable* run is taking just 1/4th of the *express* run.
+
+I tried testing with *non transactional queues* but I got `MQSendMessage failed, 3222143015l(0xc00e0027)` errors pretty soon and that required me to restart MSMQ.
