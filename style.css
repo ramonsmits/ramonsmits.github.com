@@ -102,11 +102,9 @@ a:active{
 }
 
 code{
+	color:#D2691E;/*chocolat*/
 	font-family: 'Inconsolata', Courier, monospace;
-	white-space: pre;
   border: 0.5px silver solid;
-  display: block;
-	padding:10px;
 }
 /* Tabs */
 
@@ -163,7 +161,7 @@ code{
 }
 
 
-/* Media queries */ 
+/* Media queries */
 @media screen and (min-width:900px)
 {
 	body{font-size: 1.1em;}
