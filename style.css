@@ -209,4 +209,6 @@ code{
 
 pre{
 	overflow: auto;
+	border: 0.5px solid antiquewhite;
+	padding: 3px;
 }
