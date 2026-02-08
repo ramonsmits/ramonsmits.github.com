@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ramon Smits</title>
+    <description>Technical articles by Ramon Smits - Distributed Systems Architect</description>
+    <link>https://ramonsmits.com</link>
+    <atom:link href="https://ramonsmits.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <language>en</language>
+    <item>
+      <title>Deleting all NServiceBus MSMQ queues except error and audit</title>
+      <link>https://ramonsmits.com/2016/03/31/delete-all-queues-except-error-and-audit.html</link>
+      <guid>https://ramonsmits.com/2016/03/31/delete-all-queues-except-error-and-audit.html</guid>
+      <pubDate>Thu, 31 Mar 2016 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Howto correctly process byte arrays with UTF8 BOM in C#</title>
+      <link>https://ramonsmits.com/2016/03/30/byte-array-utf8-bom-encoding-getstring.html</link>
+      <guid>https://ramonsmits.com/2016/03/30/byte-array-utf8-bom-encoding-getstring.html</guid>
+      <pubDate>Wed, 30 Mar 2016 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Benchmark MSMQ Performance</title>
+      <link>https://ramonsmits.com/2016/03/30/benchmark-msmq-performance.html</link>
+      <guid>https://ramonsmits.com/2016/03/30/benchmark-msmq-performance.html</guid>
+      <pubDate>Wed, 30 Mar 2016 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Microsoft SQL Server backup to Azure</title>
+      <link>https://ramonsmits.com/2014/05/05/sql-backup-to-azure.html</link>
+      <guid>https://ramonsmits.com/2014/05/05/sql-backup-to-azure.html</guid>
+      <pubDate>Mon, 05 May 2014 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Dell Precision M6600 working with three monitors</title>
+      <link>https://ramonsmits.com/2013/09/20/dell-precision-m6600-three-displays.html</link>
+      <guid>https://ramonsmits.com/2013/09/20/dell-precision-m6600-three-displays.html</guid>
+      <pubDate>Fri, 20 Sep 2013 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>DateTime and TimeZone explained</title>
+      <link>https://ramonsmits.com/2013/06/05/DateTime-and-TimeZone-explained.html</link>
+      <guid>https://ramonsmits.com/2013/06/05/DateTime-and-TimeZone-explained.html</guid>
+      <pubDate>Wed, 05 Jun 2013 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Multi threaded throttling in C#</title>
+      <link>https://ramonsmits.com/2013/05/02/multi-threaded-throttling-in-csharp.html</link>
+      <guid>https://ramonsmits.com/2013/05/02/multi-threaded-throttling-in-csharp.html</guid>
+      <pubDate>Thu, 02 May 2013 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Receiving Salesforce notification with NServiceBus</title>
+      <link>https://ramonsmits.com/2013/04/08/receiving-salesforce-notifcations-with-nservicebus.html</link>
+      <guid>https://ramonsmits.com/2013/04/08/receiving-salesforce-notifcations-with-nservicebus.html</guid>
+      <pubDate>Mon, 08 Apr 2013 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Namespace using statements in C#</title>
+      <link>https://ramonsmits.com/2013/03/27/namespace-using-statements-in-csharp.html</link>
+      <guid>https://ramonsmits.com/2013/03/27/namespace-using-statements-in-csharp.html</guid>
+      <pubDate>Wed, 27 Mar 2013 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>IIS url rewrite hostname to subfolder</title>
+      <link>https://ramonsmits.com/2013/03/19/iis-url-rewrite-hostname-as-subfolder.html</link>
+      <guid>https://ramonsmits.com/2013/03/19/iis-url-rewrite-hostname-as-subfolder.html</guid>
+      <pubDate>Tue, 19 Mar 2013 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Website slideshow player</title>
+      <link>https://ramonsmits.com/2013/02/20/website-slideshow-player.html</link>
+      <guid>https://ramonsmits.com/2013/02/20/website-slideshow-player.html</guid>
+      <pubDate>Wed, 20 Feb 2013 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Using Trello for GTD, Scrum or Kanban</title>
+      <link>https://ramonsmits.com/2013/02/14/using-trello-for-gtd-scrum-or-kanban.html</link>
+      <guid>https://ramonsmits.com/2013/02/14/using-trello-for-gtd-scrum-or-kanban.html</guid>
+      <pubDate>Thu, 14 Feb 2013 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Free X-Forwarded-For (XFF) plugin for Forefront TMG 2010</title>
+      <link>https://ramonsmits.com/2013/02/14/free-x-forwarded-for-xff-for-tmg.html</link>
+      <guid>https://ramonsmits.com/2013/02/14/free-x-forwarded-for-xff-for-tmg.html</guid>
+      <pubDate>Thu, 14 Feb 2013 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Amazon Route 53 Introduces DNS Failover</title>
+      <link>https://ramonsmits.com/2013/02/12/amazon-route-53-dns-failover.html</link>
+      <guid>https://ramonsmits.com/2013/02/12/amazon-route-53-dns-failover.html</guid>
+      <pubDate>Tue, 12 Feb 2013 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Visual Studio - Format XML attributes on separate lines</title>
+      <link>https://ramonsmits.com/2013/02/11/visual-studio-format-xml-attributes-on-seperate-lines.html</link>
+      <guid>https://ramonsmits.com/2013/02/11/visual-studio-format-xml-attributes-on-seperate-lines.html</guid>
+      <pubDate>Mon, 11 Feb 2013 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Linux filesystem security</title>
+      <link>https://ramonsmits.com/2013/02/11/linux-fileystem-security.html</link>
+      <guid>https://ramonsmits.com/2013/02/11/linux-fileystem-security.html</guid>
+      <pubDate>Mon, 11 Feb 2013 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Moving!</title>
+      <link>https://ramonsmits.com/2013/01/17/moving.html</link>
+      <guid>https://ramonsmits.com/2013/01/17/moving.html</guid>
+      <pubDate>Thu, 17 Jan 2013 12:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
